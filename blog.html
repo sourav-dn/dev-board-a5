@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- tailwind -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen">
+    <nav class="mx-auto w-10/12 pt-4 pb-5">      
+        <div class="navbar bg-base-100 shadow-sm">
+            <div class="navbar-start">
+                <div class="navbar-start">
+                    <img src="./assets/logo.png" alt="">
+                    <p class="text-2xl pl-2">Dev<span class="font-bold">Board</span></p>
+                </div>
+                
+            </div>
+            <div class="navbar-end">
+                <a id="btn-back-desk" class="btn btn-active btn-primary pl-5">Back to Desk</a>
+            </div>
+        </div>
+    </nav>
+    <main class="mx-auto w-10/12">
+        <h1 class="text-3xl font-bold text-center pb-3">Blogs</h1>
+        <div class="bg-white rounded-lg pl-4 mb-2">
+            <h3 class="font-semibold pt-4 pb-4">Question-1: What are the different ways to select an element in the DOM?</h3>
+            <p class="pb-2">Ans: The different ways to select and element in the DOM include getElementByid(),getElementByClassName(),createElement(),querySelector(),querySelectorAll(),getElementsByTagName(),getElementsByName()</p>
+        </div>
+        <div class="bg-white rounded-lg pl-4 mb-2">
+            <h3 class="font-semibold pt-4 pb-4">Question-2: What is the difference between innerHTML, innerText, and textContent?</h3>
+            <p class="pb-2">Ans: innerHTML interact with the content of an html element and tags.And also making it useful for manupulating the stracture of the DOM. innerText returns only the visible text content of an element and we can do this styling any text. textContent retrieves all text content, including hidden elements and raw tags </p>
+        </div>
+        <div class="bg-white rounded-lg pl-4 mb-2">
+            <h3 class="font-semibold pt-4 pb-4">Question-3: What is event delegation in the DOM?</h3>
+            <p class="pb-2">Ans:Event Delegation is a pattern based upon the concept of Event Bubbling. It is an event-handling pattern that allow to handle events at a higher level in the DOM tree other than the level where the event was first received.</p>
+        </div>
+        <div class="bg-white rounded-lg pl-4 mb-2">
+            <h3 class="font-semibold pt-4 pb-4">Question-4: What is event bubbling in the DOM?</h3>
+            <p class="pb-2">Ans: Event bubbling is a mechanism in the DOM (Document Object Model).when an event is triggered on an element, that event bubbles up through the DOM tree (from child to parent element).if a child element is clicked, that event will be triggered on its parent element.</p>
+        </div>
+        <div class="bg-white rounded-lg pl-4">
+            <h3 class="font-semibold pt-4 pb-4">Question-5: How do you create, add, and remove elements using JavaScript?</h3>
+            <p class="pb-2">Ans: in create i use document.createElement(), and i can add element with the append() or appendChild(),and remove element with remove() or removeChild()</p>
+        </div>
+    </main>
+    <script src="./styles/blog.js"></script>
+</body>
+</html>
