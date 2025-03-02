@@ -22,9 +22,9 @@ for (const button of buttons) {
         const taskContainer = clickedButton.closest('.task-container');
         const taskTitle = taskContainer.querySelector('h2.task-box').textContent;       
         alert("Board Updated Successfully");      
-        const taskAssignNumber = document.querySelector("#task-assign-num");
-        const navbarNumber = document.querySelector("#navbar-num");
-        const activityLog = document.querySelector("#activity-log");
+        const taskAssignNumber = document.getElementById("task-assign-num");
+        const navbarNumber = document.getElementById("navbar-num");
+        const activityLog = document.getElementById("activity-log");
         let currentTasks = parseInt(taskAssignNumber.textContent);
         let currentNavbarNumber = parseInt(navbarNumber.textContent);
         
