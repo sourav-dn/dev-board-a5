@@ -50,10 +50,10 @@ for (const button of buttons) {
         }    
             
     });
-    const clearHistoryButton = document.querySelector("#btn-clear-history");
+    const clearHistoryButton = document.getElementById("btn-clear-history");
     if (clearHistoryButton) {
         clearHistoryButton.addEventListener("click", function() {
-            const activityLog = document.querySelector("#activity-log");
+            const activityLog = document.getElementById("activity-log");
             activityLog.innerHTML = "";
         });
     }
