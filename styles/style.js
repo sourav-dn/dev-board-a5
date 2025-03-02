@@ -14,17 +14,14 @@ document.getElementById("date-time").innerHTML = dateTimeDay.toDateString();
 
 
 
-// completed buttons 
+// completed buttons functionality
 const buttons = document.querySelectorAll(".btn-complete");
-
 for (const button of buttons) {
     button.addEventListener("click", function(event) {
         const clickedButton = event.target;
         const taskContainer = clickedButton.closest('.task-container');
         const taskTitle = taskContainer.querySelector('h2.task-box').textContent;       
-        alert("Board Updated Successfully");
-
-        
+        alert("Board Updated Successfully");      
         const taskAssignNumber = document.querySelector("#task-assign-num");
         const navbarNumber = document.querySelector("#navbar-num");
         const activityLog = document.querySelector("#activity-log");
