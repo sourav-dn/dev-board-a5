@@ -41,6 +41,11 @@ for (const button of buttons) {
             const currentEntry = activityLog.innerHTML;
             activityLog.innerHTML = currentEntry + logEntry;
             clickedButton.disabled = true;
+
+            const updatedTasks = parseInt(taskAssignNumber.textContent);
+                if (updatedTasks === 0) {
+                    alert("Congrats!!! You have completed all the current tasks");
+                }
         }    
             
     });
