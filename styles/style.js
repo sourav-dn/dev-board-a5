@@ -45,7 +45,7 @@ for (const button of buttons) {
 
             const updatedTasks = parseInt(taskAssignNumber.textContent);
                 if (updatedTasks === 0) {
-                    alert("Congrats!!! You have completed all the current tasks");
+                    alert("Congrats!!! You have completed all the current task");
                 }
         }    
             
