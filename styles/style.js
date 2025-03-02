@@ -35,11 +35,15 @@ for (const button of buttons) {
             taskAssignNumber.textContent = currentTasks - 1;
             navbarNumber.textContent = currentNavbarNumber + 1;
 
+            const activityLogEntry = document.createElement("p");
+            activityLogEntry.classList.add(
+                "bg-white", "p-4", "rounded-md",
+                "text-sm", "border", "border-gray-300", "mb-2"
+            );
             
             const timestamp = new Date().toLocaleTimeString();
-            const logEntry = `<p>You have Completed The Task ${taskTitle} at ${timestamp}</p>`;
-            const currentEntry = activityLog.innerHTML;
-            activityLog.innerHTML = currentEntry + logEntry;
+            activityLogEntry.textContent = `You have Completed The Task ${taskTitle} at ${timestamp}`;
+            activityLog.appendChild(activityLogEntry);
             clickedButton.disabled = true;
 
             const updatedTasks = parseInt(taskAssignNumber.textContent);
